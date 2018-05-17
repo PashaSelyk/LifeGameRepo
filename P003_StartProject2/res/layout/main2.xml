@@ -7,7 +7,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_centerInParent="true"
-        android:src="@drawable/catwomen" />
+        android:src="@drawable/background_main" />
 
     <Button
         android:id="@+id/button_m1"

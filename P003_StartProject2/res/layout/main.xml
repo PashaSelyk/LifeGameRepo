@@ -1,13 +1,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
-    
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_centerInParent="true"
-        android:src="@drawable/catwomen" />
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/LOST"
+        android:textSize="50sp"
+        android:textStyle="italic|bold" />
 
     <Button
         android:id="@+id/button1"
@@ -16,8 +20,8 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="@string/STR"
-        android:drawableLeft="@drawable/ic_launcher"/>
+        android:drawableStart="@drawable/ic_launcher"
+        android:text="@string/STR" />
 
     <Button
         android:id="@+id/button2"
@@ -26,8 +30,8 @@
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="PREFERENCES" 
-        android:drawableLeft="@drawable/ic_launcher"/>
+        android:drawableStart="@drawable/ic_launcher"
+        android:text="@string/PREFERENCES" />
 
     <Button
         android:id="@+id/button3"
@@ -36,9 +40,8 @@
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="ABOUT" 
-        android:drawableLeft="@drawable/ic_launcher"/>
-    
+        android:drawableStart="@drawable/ic_launcher"
+        android:text="@string/ABOUT" />
 
     <Button
         android:id="@+id/button4"
@@ -47,16 +50,7 @@
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="EXIT" 
-        android:drawableLeft="@drawable/ic_launcher"/>
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="       LOST"
-        android:textSize="50dp"
-        android:textStyle="italic|bold" />
+        android:drawableStart="@drawable/ic_launcher"
+        android:text="@string/EXIT" />
 
 </RelativeLayout>
