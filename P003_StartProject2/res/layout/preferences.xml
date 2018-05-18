@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="136dp"
+            android:text="VIBRO" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="54dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBar1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:text="VOLUME OF SOUND"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+                <Button
+            android:id="@+id/button_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/checkBox1"
+            android:layout_marginTop="90dp"
+            android:text="ADVANCED SETTINGS" />
+
+
+
+
+</RelativeLayout>

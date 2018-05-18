@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="String_01">Реестр</string>
+    <string name="String_02">Реестр</string>
+
+        
+    <string name="String_03">3</string>
+    <string name="String_04">4</string>
+    <color name="Color_01">#557744</color>
+    <color name="Color_02">#432135</color>
+    
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="margin">50dp</dimen>
+<dimen name="text">64sp</dimen>
+<dimen name="border">2dp</dimen>
+<dimen name="negborder">-3dp</dimen>
+<item name="gradient_radius" type="integer">500</item>
+<item name="shadowDx" type="integer">2</item>
+<item name="shadowDy" type="integer">2</item>
+<item name="shadowRadius" type="integer">4</item>
+
+<color name="borderLow">#999</color>
+<color name="borderHigh">#DDD</color>
+<color name="gradientStart">#DDD</color>
+<color name="gradientEnd">#BBB</color>
+<color name="text">#999</color>
+<color name="shadow">#FFFFFF</color>
+    
+</resources>
