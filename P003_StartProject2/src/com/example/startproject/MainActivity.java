@@ -28,7 +28,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		button2 = (Button) findViewById(R.id.button2);
 		button2.setOnClickListener(this);
 
-		
+		button3 = (Button) findViewById(R.id.button3);
+		button3.setOnClickListener(this);
 	}
 	
 	  @Override
@@ -46,19 +47,17 @@ public class MainActivity extends Activity implements OnClickListener {
 	        	Intent intent2 = new Intent(this, PREFEREBNCES.class);
 	        	startActivity(intent2);
 	          break;
+	          
+	      case R.id.button3:
+	    	  
+	    	  Intent intent3 = new Intent(this, About.class);
+	        	startActivity(intent3);
+	        	
+	          break; 
 		    default:
 			      break;
 	    }
 
-	  
-	  
-
-	
-	
-
-
-			
-		
 	
 	}
 }

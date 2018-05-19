@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent" 
+    android:background="@drawable/background_main" >
     
     <ImageView
         android:layout_width="fill_parent"
@@ -32,11 +33,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-       
         android:layout_below="@+id/button_m2"
         android:layout_marginTop="10dp"
         android:text="PROGRESS" />
-
-
 
 </RelativeLayout>
