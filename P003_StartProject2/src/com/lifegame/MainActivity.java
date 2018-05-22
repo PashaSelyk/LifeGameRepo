@@ -66,9 +66,24 @@ public class MainActivity extends Activity implements OnClickListener {
             Intent intent3 = new Intent(this, AboutActivity.class);
             startActivity(intent3);
             break;
+        case R.id.exitButton:
+            exit();
+            break;
         default:
             break;
         }
-
+    }
+    
+    public void exit() {
+        Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+        homeIntent.addCategory(Intent.CATEGORY_HOME);
+        homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);  
+        startActivity(homeIntent);
+    }
+    
+    @Override
+    protected void onResume() {
+        super.onResume();
+        animateButtons();
     }
 }
