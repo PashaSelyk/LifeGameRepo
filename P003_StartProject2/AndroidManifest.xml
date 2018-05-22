@@ -22,9 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="Activity2"></activity>
-        <activity android:name="PREFEREBNCES"></activity>
-        <activity android:name="About"></activity>
+        <activity android:name="StartActivity"></activity>
+        <activity android:name="PreferencesActivity"></activity>
+        <activity android:name="AboutActivity"></activity>
     </application>
 
 </manifest>

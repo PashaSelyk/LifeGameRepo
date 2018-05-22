@@ -14,7 +14,7 @@
         android:textStyle="italic|bold" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -24,30 +24,30 @@
         android:text="@string/STR" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/preferencesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/startButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:drawableStart="@drawable/ic_launcher"
         android:text="@string/PREFERENCES" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/aboutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/preferencesButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:drawableStart="@drawable/ic_launcher"
         android:text="@string/ABOUT" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/exitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
+        android:layout_below="@+id/aboutButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:drawableStart="@drawable/ic_launcher"
