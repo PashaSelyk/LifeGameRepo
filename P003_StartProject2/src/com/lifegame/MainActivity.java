@@ -1,19 +1,26 @@
 package com.lifegame;
 
+import java.util.Locale;
+
 import com.lifegame.animation.MyBounceInterpolator;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.transition.TransitionManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 public class MainActivity extends Activity implements OnClickListener {
+    
+    public static final String DEFAULT_LOCALE = "ru";
 
     Button startButton;
     Button preferencesButton;
@@ -24,6 +31,11 @@ public class MainActivity extends Activity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setLocale(DEFAULT_LOCALE);
+        // remove title
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.main);
         init();
         animateButtons();
@@ -81,9 +93,19 @@ public class MainActivity extends Activity implements OnClickListener {
         startActivity(homeIntent);
     }
     
+    private void setLocale(String localeStr) {
+        Locale locale = new Locale(localeStr);
+        Locale.setDefault(locale);
+        Configuration config = getBaseContext().getResources().getConfiguration();
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config,
+              getBaseContext().getResources().getDisplayMetrics());
+    }
+    
     @Override
     protected void onResume() {
         super.onResume();
+        setLocale(DEFAULT_LOCALE);
         animateButtons();
     }
 }

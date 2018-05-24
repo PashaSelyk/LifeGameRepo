@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +22,9 @@ public class NewGameActivity extends Activity implements OnClickListener {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.new_game_layout);
         init();
         checkedTextView1 = (TextView) findViewById(R.id.checkedTextView1);
@@ -30,7 +35,6 @@ public class NewGameActivity extends Activity implements OnClickListener {
     private void init() {
     	okButton = (Button) findViewById(R.id.okButton);
     	okButton.setOnClickListener(this);
-    	
     }
     
     public void charSequence(View v) {
@@ -43,7 +47,7 @@ public class NewGameActivity extends Activity implements OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
         case R.id.okButton:
-            Intent intent = new Intent(this, Chapter_01.class);
+            Intent intent = new Intent(this, Chapter_01_Activity.class);
             startActivity(intent);
             break;
         default:
