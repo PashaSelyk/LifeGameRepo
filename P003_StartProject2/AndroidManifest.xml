@@ -26,6 +26,7 @@
         <activity android:name="PreferencesActivity"></activity>
         <activity android:name="AboutActivity"></activity>
         <activity android:name="NewGameActivity"></activity>
+        <activity android:name="Chapter_01"></activity>
     </application>
 
 </manifest>

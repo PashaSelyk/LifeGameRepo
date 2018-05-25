@@ -8,22 +8,43 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="98dp"
-        android:text="@string/PLAYER_NAME"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_alignRight="@+id/editText1"
+        android:layout_marginTop="48dp"
+        android:text="@string/SURVIVOR"
+        android:textSize="50sp"
+        android:textStyle="italic|bold" />
 
-    <EditText
-        android:id="@+id/editText1"
+    <CheckedTextView
+        android:id="@+id/checkedTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="34dp"
-        android:ems="10" >
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="CheckedTextView" />
+
+    <EditText
+        android:id="@+id/PlayerNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/checkedTextView1"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="@string/PLAYER_NAME" >
 
         <requestFocus />
     </EditText>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PlayerNameEditText"
+        android:layout_alignBottom="@+id/PlayerNameEditText"
+        android:onClick="charSequence"
+        android:layout_alignParentRight="true"
+        android:text="Ok" />
 
 </RelativeLayout>
