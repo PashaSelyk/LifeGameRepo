@@ -3,31 +3,32 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" 
     android:background="@drawable/background_main" >
-
+    
     <Button
-        android:id="@+id/contin"
-        android:layout_width="200dp"
-        android:layout_height="55dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/new_game"
-        android:text="@string/CONTINUE" />
-
-    <Button
-        android:id="@+id/menu"
-        android:layout_width="200dp"
-        android:layout_height="55dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/contin"
-        android:text="@string/MENU" />
-
-    <Button
-        android:id="@+id/new_game"
+        android:id="@+id/newGameButton"
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="131dp"
         android:text="@string/NEW_GAME" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/newGameButton"
+        android:text="@string/CONTINUE" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/continueButton"
+        android:text="@string/MENU" />
+
 
     <TextView
         android:id="@+id/textView1"
@@ -49,5 +50,26 @@
         android:layout_marginBottom="14dp"
         android:layout_marginLeft="18dp"
         android:text="@string/VERSION" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/continueButton"
+        android:layout_alignBottom="@+id/continueButton"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/PERCENT"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/continueButton"
+        android:layout_alignBottom="@+id/continueButton"
+        android:layout_toRightOf="@+id/continueButton"
+        android:layout_marginLeft="18dp"
+        android:ems="10"
+        android:typeface="sans" />
 
 </RelativeLayout>

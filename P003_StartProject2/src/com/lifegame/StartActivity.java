@@ -8,15 +8,36 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
  
-public class StartActivity extends Activity  {
+public class StartActivity extends Activity implements OnClickListener {
 	
-	Button new_game;
-	Button contin;
-	Button menu;
+	Button newGameButton;
+	Button continueButton;
+	Button menuButton;
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start);
+        init();
     }  
+    
+    private void init() {
+    	newGameButton = (Button) findViewById(R.id.newGameButton);
+    	newGameButton.setOnClickListener(this);
+    	continueButton = (Button) findViewById(R.id.continueButton);
+    	continueButton.setOnClickListener(this);
+    }
+        
+    
+    	
+    	public void onClick(View v) {
+            switch (v.getId()) {
+            case R.id.newGameButton:
+                Intent intent = new Intent(this, NewGameActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+       }
+  }
 }
