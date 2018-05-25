@@ -10,9 +10,9 @@ import android.widget.Button;
  
 public class StartActivity extends Activity  {
 	
-	Button button_m1;
-	Button button_m2;
-	Button button_m3;
+	Button new_game;
+	Button contin;
+	Button menu;
  
     @Override
     protected void onCreate(Bundle savedInstanceState) {

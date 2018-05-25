@@ -20,6 +20,6 @@ public class PreferencesActivity extends Activity   {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.preferences);
+        setContentView(R.layout.preferences_layout);
     }
 }

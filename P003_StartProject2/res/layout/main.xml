@@ -8,29 +8,18 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/LOST"
+        android:layout_marginTop="50dp"
+        android:text="@string/SURVIVOR"
         android:textSize="50sp"
         android:textStyle="italic|bold" />
-
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:drawableStart="@drawable/ic_launcher"
-        android:text="@string/STR" />
 
     <Button
         android:id="@+id/preferencesButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/startButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:drawableStart="@drawable/ic_launcher"
         android:text="@string/PREFERENCES" />
 
@@ -38,20 +27,41 @@
         android:id="@+id/aboutButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/preferencesButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:drawableStart="@drawable/ic_launcher"
-        android:text="@string/ABOUT" />
+        android:text="@string/MAP" />
 
     <Button
         android:id="@+id/exitButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/aboutButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:drawableStart="@drawable/ic_launcher"
         android:text="@string/EXIT" />
 
+    
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/ic_launcher"
+        android:text="@string/STR" />
+
+    
+   <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/VERSION" />
+   
 </RelativeLayout>
