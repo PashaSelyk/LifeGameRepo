@@ -12,8 +12,8 @@
     <string name="NEW_GAME">Новая игра</string>
     <string name="CONTINUE">Продолжить</string>
     <string name="MENU">Меню</string>
-    <string name="PLAYER_NAME">Введите имя игрока...</string>
+    <string name="PLAYER_NAME">Введите имя игрока:</string>
     <string name="PERCENT">%</string>
-    <string name="CHAPTER_1">Глава 1  Знакомство</string>
-    
+    <string name="CHAPTER_1">Глава 1.</string>
+    <string name="ACQUAINTANCE">Знакомство.</string>
 </resources>

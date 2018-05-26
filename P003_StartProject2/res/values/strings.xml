@@ -16,6 +16,7 @@
     <string name="MENU">Menu</string>
     <string name="PLAYER_NAME">Enter name:</string>
     <string name="PERCENT">%</string>
-    <string name="CHAPTER_1">Chapter 1  Acquaintance</string>
-
+    <string name="CHAPTER_1">Chapter 1.</string>
+    <string name="ACQUAINTANCE">Acquaintance</string>
+    
 </resources>

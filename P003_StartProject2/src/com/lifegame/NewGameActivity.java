@@ -23,28 +23,14 @@ public class NewGameActivity extends Activity implements OnClickListener {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.new_game_layout);
-        
-        
-        
-        
-        
-        
-       
+
         textViewName = (EditText) findViewById(R.id.textViewName);
         PlayerNameEditText = (EditText) findViewById(R.id.PlayerNameEditText);
 
     	okButton = (Button) findViewById(R.id.okButton);
     	okButton.setOnClickListener(this);
-    	
-    	
-    	
-    	
     }
-        
-    
-    
-    
-   
+
     public void onClick(View v) {
 	    Intent intent = new Intent(this, Chapter_01_Activity.class); 
 	    intent.putExtra("message", PlayerNameEditText.getText().toString());
