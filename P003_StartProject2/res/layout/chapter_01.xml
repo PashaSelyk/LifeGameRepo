@@ -5,22 +5,13 @@
     android:background="@drawable/background_main" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/checkedTextView1"
-        android:layout_alignParentLeft="true"
-        android:text="Добро пожаловать"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <CheckedTextView
-        android:id="@+id/checkedTextView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="14dp"
-        android:layout_marginTop="43dp"
-        android:text="CheckedTextView" />
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:text="CHAPTER_1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
