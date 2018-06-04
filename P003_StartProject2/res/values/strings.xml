@@ -10,7 +10,7 @@
     <string name="MAP">MAP</string>
     <string name="EXIT">EXIT</string>
     <string name="LOST">LOST</string>
-    <string name="VERSION">Version</string>
+    <string name="VERSION">Version: 1.0</string>
     <string name="NEW_GAME">New Game</string>
     <string name="CONTINUE">Continue</string>
     <string name="MENU">Menu</string>

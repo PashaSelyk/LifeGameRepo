@@ -1,5 +1,7 @@
 package com.lifegame;
 
+import com.lifegame.chapter01.Chapter_01_Activity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

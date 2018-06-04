@@ -26,7 +26,8 @@
         <activity android:name="PreferencesActivity"></activity>
         <activity android:name="AboutActivity"></activity>
         <activity android:name="NewGameActivity"></activity>
-        <activity android:name="Chapter_01_Activity"></activity>
+        <activity android:name=".chapter01.Chapter_01_Activity"></activity>
+        <activity android:name=".chapter01.Chapter01sheet01"></activity>
     </application>
 
 </manifest>
