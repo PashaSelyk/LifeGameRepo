@@ -33,7 +33,6 @@ public class StartActivity extends Activity implements OnClickListener {
     	continueButton.setOnClickListener(this);
     }
         
-    
     	
     	public void onClick(View v) {
             switch (v.getId()) {

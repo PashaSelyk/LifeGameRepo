@@ -1,13 +1,18 @@
 package com.lifegame.chapter01;
 
+import java.io.InputStream;
+
 import com.lifegame.R;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
-public class Chapter01sheet01 extends Activity {
+public class Chapter01sheet01Activity extends Activity {
+	
+	TextView tv_text;
 	
 	
     @Override
@@ -17,9 +22,7 @@ public class Chapter01sheet01 extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.chapter_01_sheet_01);
-        
-        
-        
-    }
 
+
+}
 }

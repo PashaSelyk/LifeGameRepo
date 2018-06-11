@@ -1,6 +1,6 @@
 package com.lifegame;
 
-import com.lifegame.chapter01.Chapter_01_Activity;
+import com.lifegame.chapter01.Chapter01Activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -34,7 +34,7 @@ public class NewGameActivity extends Activity implements OnClickListener {
     }
 
     public void onClick(View v) {
-	    Intent intent = new Intent(this, Chapter_01_Activity.class); 
+	    Intent intent = new Intent(this, Chapter01Activity.class); 
 	    intent.putExtra("message", PlayerNameEditText.getText().toString());
 	    startActivity(intent);
 	  } 

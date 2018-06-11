@@ -2,18 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" 
-    android:background="@drawable/background_main" >
-
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="15dp"
-        android:layout_marginRight="27dp"
-        android:text="CHAPTER_1"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    android:background="@drawable/background_main_alum" >
 
     <TextView
         android:id="@+id/textVtextViewChapter_1"
@@ -33,5 +22,24 @@
         android:layout_centerVertical="true"
         android:text="@string/ACQUAINTANCE"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b_read"
+        android:layout_alignBottom="@+id/b_read"
+        android:layout_alignParentLeft="true"
+        android:text="CHAPTER_1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/b_read"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Далее" />
 
 </RelativeLayout>
