@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorOne">
+    android:background="@drawable/backgraund_style">
 
 
     <RelativeLayout
@@ -35,7 +35,7 @@
             android:layout_centerVertical="true"
             android:onClick="onClickBut"
             android:scrollbarSize="@dimen/default_gap"
-            android:shadowColor="@color/colorPrimary"
+            android:background="@drawable/buttons"
             android:text="" />
 
         <RelativeLayout
