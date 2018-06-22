@@ -1,36 +1,36 @@
 package com.example.pasha.cubgameregeneration;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.RelativeLayout;
+import android.widget.Switch;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity  implements View.OnClickListener{
+
+    private Button start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
+
+        start = (Button)findViewById(R.id.startButton);
+        start.setOnClickListener(this);
     }
 
 
-
-
-    public void onClickBut2(View view){
-
-        RelativeLayout RelativeLay3 = (RelativeLayout)findViewById(R.id.RelativeLay3);
-
-        RelativeLayout.LayoutParams lParms1 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-
-
-
-        Button btnNew3 = new Button(this);
-        RelativeLay3.addView(btnNew3, lParms1);
-        btnNew3.setId(btnNew3.generateViewId());
-        btnNew3 = (Button)findViewById(btnNew3.getId());
-        final Button finalBtnNew3 = btnNew3;
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()) {
+            case R.id.startButton:
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            break;
+            default:
+            break;
+        }
 
     }
 }
