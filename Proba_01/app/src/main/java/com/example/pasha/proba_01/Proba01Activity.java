@@ -2,11 +2,12 @@ package com.example.pasha.proba_01;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 
-public class Proba01Activity extends Activity {
+public class Proba01Activity extends Activity implements View.OnClickListener{
 
     private Button[][] buttons = new Button[5][5];
 
@@ -29,15 +30,36 @@ public class Proba01Activity extends Activity {
 
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5;j++){
+                String buttonID = "button_" + i + j;
+                int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
+                buttons[i][j] = findViewById(resID);
+                buttons[i][j].setOnClickListener(this);
 
             }
         }
 
+        Button buttonReset = (Button)findViewById(R.id.button_reset);
+        buttonReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+
+
+            }
+        });
 
     }
 
 
+    @Override
+    public void onClick(View v) {
+
+
+        
+
+
+
+    }
 }
 
 
